@@ -1,0 +1,201 @@
+INICIO
+
+    // Definir constantes y variables
+    CONSTANTE IVA = 0.12
+ Definir variable cantidad, precioOriginal, porcentajeDescuento, precioConDescuento, precioConImpuestos, costoEnvio, costoTotal, cantidadProductos, pesoPaquete, pesoPaquete2, costoEnvio2. precioConDescuento2, precioConImpuestos2
+//Definir decimal//
+Decimal  precioOriginal, porcentajeDescuento, precioConDescuento, precioConImpuestos, costoEnvio, costoTotal, cantidadProductos, pesoPaquete, pesoPaquete2, costoEnvio2, precioConDescuento2, precioConImpuestos2
+Decimal Cantidad1 = precioOriginal
+Decimal Cantidad2 = 200
+Decimal porcentajeDescuento2 = .5
+    // Leer el precio original del producto
+    ESCRIBIR "Introduce el precio original del producto:"
+    LEER precioOriginal
+precioOriginal = 100
+ESCRIBIR “Introduce cantidad de precio original del producto”
+Leer Cantidad2
+Cantidad2 = 200
+    // Aplicar un descuento al producto si es aplicable
+    ESCRIBIR "Introduce el porcentaje de descuento (ejemplo: para 10% solo ingresa 0.10):"
+    LEER porcentajeDescuento
+porcentajeDescuento = 0.10
+porcentajeDescuento2 = 0.5
+    precioConDescuento = precioOriginal - (precioOriginal * porcentajeDescuento)
+Si (precioOriginal) >= 100 Entonces
+Colocar porcentajeDescuento
+Sino
+No colocar porcentajeDescuento
+Fin si
+Si (Cantidad2) >= 200 Entonces
+Colocar porcentajeDescuento2
+Sino
+No colocar porcentajeDescuento2
+Fin si
+
+Definir num1 como precioOriginal
+Definir num2 como porcentajeDescuento
+Definir num4 como resultado1
+Definir resultado2 como precioConDescuento
+Definir resultado3 como precioConDescuento2
+Inicio
+Función 1 multiplicar (num1, num2, resultado1)
+Num1 >= 100
+Num2 >= 0.10
+Multiplicación >= 10.00
+Escribir (“Ingrese precioOriginal “)
+Leer(num1)
+
+Escribir(“Ingrese porcentajeDescuento “)
+Leer(num2)
+
+Multiplicar(num1, num2, multiplicar)
+ 
+Escribir(“La multiplicación de “, num1, “y” num2, “es”, multiplica)
+
+Función 2 resta (num1, num4,resultado2) 
+Num1 >= 100
+Num4 >= 10.00
+Resta >= 90.00
+Escribir (“Ingrese precioOriginal “)
+Leer(num1)
+
+Escribir(“Ingrese resultado1 “)
+Leer(num4)
+Resta (num1, num4, resta)
+Escribir(“La resta de “, num1, “y” num4, “es”, resta)
+Fin
+precioConDescuento2 = Cantidad2 - (Cantidad2 * porcentajeDescuento2)
+
+Definir num3 como Cantidad2
+Definir num5 como porcentajeDescuento2
+Definir resultado 2.1 como resultado4
+Definir resultado 2.2 como precioConDescuento2 
+Inicio
+Función 3 multiplicar (num3, num5, resultado2.1)
+Num3 >= 200
+Num5 >= 0.5
+Multiplicación >= 100
+Escribir (“Ingrese Cantidad2 “)
+Leer(num3)
+
+Escribir(“Ingrese porcentajeDescuento2 “)
+Leer(num5)
+
+Multiplicar(num3, num5, multiplicar)
+ 
+Escribir(“La multiplicación de “, num3, “y” num5, “es”, multiplica)
+
+Función 3 resta (num3, resultado2.1 , resultado2.2) 
+Num3 >= 200
+Resultado2.1 >= 100
+Resta >= 100
+Escribir (“Ingrese Cantidad2“)
+Leer(num3)
+
+Escribir(“Ingrese resultado2“)
+Leer(resultado2.1)
+Resta (num3, resultado2.1, resta)
+Escribir(“La resta de “, num3, “y” resultado2.1, “es”, resta)
+
+Fin
+
+    // Aplicar impuestos al producto
+precioImpuestos = 1.12
+    precioConImpuestos = precioConDescuento + (precioConDescuento * IVA)
+Definir resultado3 como precioConImpuestos
+Definir num6 como precioImpuestos
+Definir num3 como Cantidad2
+Definir num5 como porcentajeDescuento2
+Definir resultado 2.2 como precioConDescuento2 
+Definir resultado3.1 como precioConImpuestos2
+
+precioConDescuento = 90
+precioConDescuento2 = 100
+
+Inicio
+Función 4 multiplicar (resultado2, num6, multiplicar)
+Resultado2 = 90
+Num6 =.12 
+Multiplicación = 100.80
+Escribir (“ingrese precioConDescuento”)
+Leer(resultado2)
+Escribir(“ingrese precioImpuestos”)
+Leer(num6)
+Multiplicar(resultado2, num6, multiplicar)
+Escribir(“La multiplicación de”, resultado2, “y” num6, “es”, multiplica)
+Fin
+precioConImpuestos2 = precioConDescuento2 + (precioConDescuento2 * IVA)
+
+Inicio
+Función 5 multiplicar (resultado2.2, num6, multiplicar)
+Resultado2.2 = 100
+Num6 =.12
+Multiplicación = 12.00
+Escribir (“ingrese precioConDescuento2”)
+Leer(resultado2.2)
+Escribir(“ingrese precioImpuestos”)
+Leer(num6)
+Multiplicar(resultado2.2, num6, multiplicar)
+Escribir(“La multiplicación de”, resultado2, “y” num6, “es”, multiplica)
+Fin
+
+
+    // Si el cliente compra más de un artículo, aplicar descuento por cantidad (en este ejemplo, no se especifica cuánto es el descuento por cantidad, por lo que lo dejaré como un comentario)
+    // precioConImpuestos = precioConImpuestos - (precioConImpuestos * DESCUENTO_POR_CANTIDAD)
+    // precioConImpuestos2 = precioConImpuestos2 - (precioConImpuestos2 * DESCUENTO_POR_CANTIDAD)
+
+    // Calcular el costo de envío basado en el destino y el peso del paquete (para este ejemplo, simplemente asumiré un costo fijo, ya que no se especifica cómo calcularlo)
+    ESCRIBIR "Introduce el peso del paquete:"
+    LEER pesoPaquete
+pesoPaquete = 3 kg
+pesoPaquete2 = 6 kg
+    // Aquí puedes implementar una lógica más detallada según el destino y el peso
+    costoEnvio = 5.00 
+costoEnvio2 = 16.00
+    // Calcular el costo final del producto
+    costoTotal = precioConImpuestos + costoEnvio
+Definir resultado3 como precioConImpuestos
+Definir resultado3.1 como precioConImpuestos2
+Definir num7 como costoEnvio
+Definir num8 como costoEnvio2
+Definir resultado4 como costoTotal
+Definir resultado5 como costoTotal2
+
+
+Inicio
+Función 6 suma (num7,resultado3, resultado4)
+Num7 >= 5
+Resultado3 = 100.80
+Suma >= 105.80
+Escribir (“ingrese costoEnvio”)
+Lees(num7)
+Escribir (“ingrese precioConImpuestos”)
+Leer(resultado3)
+Sumar(num7,resultado3, sumar)
+Escribir(“La suma de”, num7, “y” resultado3, “es”, suma)
+Fin
+
+costoTotal2 = precioConImpuestos2 + costoEnvio2
+
+Inicio
+Función 7 suma (resultado3.1, num8, resultado5)
+Num6 >= 5
+Resultado2 = 100.80
+Suma >= 105.80
+Escribir (“ingrese costoEnvio”)
+Lees(num6)
+Escribir (“ingrese precioConImpuestos”)
+Leer(resultado2)
+Sumar(num6,resultado2,sumar)
+Escribir(“La suma de”, num6, “y” resultado2, “es”, suma)
+Fin
+
+    // Mostrar el costo final desglosando componentes
+    ESCRIBIR "Precio Original: " + precioOriginal 
+    ESCRIBIR "Descuento: " + (precioOriginal * porcentajeDescuento)
+    ESCRIBIR "Impuestos (IVA): " + (precioConDescuento * IVA)
+    ESCRIBIR "Costo de Envío: " + costoEnvio
+    ESCRIBIR "Costo Total: " + costoTotal
+
+FIN
+
